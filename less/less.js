@@ -61,7 +61,7 @@ function toCSS(path, callback) {
                 callback(err);
             } else {
                 try {
-                    css = tree.toCSS({compress: true});
+                    css = tree.toCSS({compress: false});
                     callback(null, css);
                 } catch (e) {
                     callback(e);
